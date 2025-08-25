@@ -34,10 +34,9 @@ export default function Index() {
       {/* Main Title */}
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-2xl font-bold">Создать битву</h2>
-        <div className="flex items-center gap-2 bg-primary/20 px-3 py-1 rounded-full">
-          <div className="w-2 h-2 bg-primary rounded-full"></div>
-          <span className="text-sm font-medium">{coins}</span>
-          <Icon name="Plus" size={16} />
+        <div className="flex items-center gap-2 bg-green-500/20 px-3 py-1 rounded-full">
+          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+          <span className="text-sm font-medium">{onlineUsers.toLocaleString()}</span>
         </div>
       </div>
 
