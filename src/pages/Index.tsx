@@ -9,6 +9,7 @@ export default function Index() {
   const [playerCount, setPlayerCount] = useState('2');
   const [accessType, setAccessType] = useState('public');
   const [coins, setCoins] = useState(14);
+  const [onlineUsers, setOnlineUsers] = useState(1247);
 
   return (
     <div className="min-h-screen bg-background text-foreground p-4 max-w-md mx-auto">
@@ -18,9 +19,15 @@ export default function Index() {
           <Icon name="ArrowLeft" size={24} className="text-muted-foreground" />
           <h1 className="text-xl font-medium">Battles</h1>
         </div>
-        <div className="flex items-center gap-2">
-          <Icon name="MoreVertical" size={20} className="text-muted-foreground" />
-          <Icon name="X" size={20} className="text-muted-foreground" />
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 bg-green-500/20 px-2 py-1 rounded-full">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-sm font-medium">{onlineUsers.toLocaleString()}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Icon name="MoreVertical" size={20} className="text-muted-foreground" />
+            <Icon name="X" size={20} className="text-muted-foreground" />
+          </div>
         </div>
       </div>
 
