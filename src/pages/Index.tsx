@@ -43,7 +43,7 @@ export default function Index() {
             </div>
           </div>
           <h3 className="text-lg font-medium text-center mb-2">Выбрать</h3>
-          <p className="text-center text-muted-foreground">подарок</p>
+          <p className="text-center text-muted-foreground">ставку</p>
         </CardContent>
       </Card>
 
