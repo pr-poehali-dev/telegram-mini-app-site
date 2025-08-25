@@ -19,15 +19,9 @@ export default function Index() {
           <Icon name="ArrowLeft" size={24} className="text-muted-foreground" />
           <h1 className="text-xl font-medium">Battles</h1>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 bg-green-500/20 px-2 py-1 rounded-full">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium">{onlineUsers.toLocaleString()}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Icon name="MoreVertical" size={20} className="text-muted-foreground" />
-            <Icon name="X" size={20} className="text-muted-foreground" />
-          </div>
+        <div className="flex items-center gap-2">
+          <Icon name="MoreVertical" size={20} className="text-muted-foreground" />
+          <Icon name="X" size={20} className="text-muted-foreground" />
         </div>
       </div>
 
